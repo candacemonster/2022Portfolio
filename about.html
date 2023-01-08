@@ -27,73 +27,153 @@
     ></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/path/to/favicon.ico" />
-    <title>About</title>
+    <title>Projects</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
-        <!-- Nav Bar -->
-        <nav
-          class="navbar navbar-expand-lg mb-4"
-          style="background-color: #e3f2fd"
-        >
-          <div class="container-fluid">
-            <!-- Navbar content -->
-            <a class="navbar-brand" href="/index.html">CW</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
-                >
-                <a class="nav-link" href="/about.html">About</a>
-                <a class="nav-link disabled">Blog</a>
-                <a class="nav-link" href="/projects.html">Projects</a>
-                <a class="nav-link" href="/contact.html">Contact</a>
+        <!-- Header -->
+        <header class="main-header">
+          <!-- Nav Bar -->
+          <nav
+            class="navbar navbar-expand-lg fixed-top mb-4"
+            style="background-color: #a68dad"
+          >
+            <div class="container-fluid">
+              <!-- Navbar content -->
+              <a class="navbar-brand" href="/index.html">CW</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="/about.html">About</a>
+                  <a class="nav-link disabled">Blog</a>
+                  <a class="nav-link" href="/projects.html">Projects</a>
+                  <a class="nav-link" href="/contact.html">Contact</a>
+                </div>
               </div>
             </div>
+          </nav>
+        </header>
+        <!-- main content -->
+        <section class="main-about">
+          <div class="clearfix">
+            <img
+              src="/media/hedcheese_stargazing_cotton_candy_girl_with_long_hair_daff6a41-e6bc-4a7f-bab2-f7a69b4d79ba.PNG"
+              class="col-md-6 float-md-end mb-3 ms-md-3 about-img"
+              alt="..."
+            />
+            <h1>about me</h1>
+            <h3>
+              SaaS Support | Academic Research | Front-end Dev (in-training 🤪).
+            </h3>
+            <p>
+              A short paragraph about me... I have no idea what to say here...
+              maybe something about my work, projects, hobbies, etc., and
+              anything that I could put with some type of skills chart in the
+              future???
+            </p>
           </div>
-        </nav>
-        <!-- Header -->
-
-        <!-- # -->
-        <h1>About!</h1>
-
-        <!-- Footer -->
-        <div class="row">
-          <footer class="footer">
-            <div>© Candace Woodbury 2023.</div>
-            <div>made with lots of espresso</div>
-            <div>
-              while jammin' to
-              <a
-                class="project-link"
-                href="https://music.apple.com/us/playlist/monster-mixtape-2023/pl.u-V9D7moNC1j3LPl"
-                >this playlist.</a
-              >
+        </section>
+        <!-- skills (bar chart) -->
+        <section class="skills"><h2>skills</h2></section>
+        <!-- random facts -->
+        <section class="random-facts">
+          <div class="row">
+            <div class="col-md-5 facts-img">
+              <img src="" class="" alt="" />
             </div>
-          </footer>
+            <div class="col-md-7">
+              <h2>random facts</h2>
+              <ul class="ten-things">
+                <li>I drink a lot of espresso</li>
+                <li>Dinosaurs</li>
+                <li>Taekwondo (green belt)</li>
+                <li>Love to eat, hate to cook</li>
+                <li>....</li>
+                <li>....</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- sidebar social and email -->
+        <div orientation="left" class="side-social">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.instagram.com/candacemonster/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/candacemonster"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                id="copy-link"
+                data-clipboard-text="candacisms@gmail.com"
+                href="#"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </li>
+            <li>...</li>
+          </ul>
         </div>
+        <div orientation="right" class="side-email">
+          <div class="email-main">
+            <a href="mailto:candacisms@gmail.com">candacisms@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          © <a href="#">Candace Woodbury</a> 2022.
+          <div>
+            made with lots of espresso while jammin' to
+            <a
+              class=""
+              href="https://music.apple.com/us/playlist/tbd/pl.u-e98lkMEfWZa7e6"
+              >this playlist</a
+            >.
+          </div>
+          <div class="">
+            View
+            <a class="" href="https://github.com/candacemonster/portfolio"
+              >source</a
+            >.
+          </div>
+        </footer>
       </div>
     </div>
+    <script src="/src/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!-- JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
 </html>

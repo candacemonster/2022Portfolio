@@ -32,60 +32,78 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <!-- Nav Bar -->
-        <nav
-          class="navbar navbar-expand-lg mb-4"
-          style="background-color: #e3f2fd"
-        >
-          <div class="container-fluid">
-            <!-- Navbar content -->
-            <a class="navbar-brand" href="/index.html">CW</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
-                >
-                <a class="nav-link" href="/about.html">About</a>
-                <a class="nav-link disabled">Blog</a>
-                <a class="nav-link" href="/projects.html">Projects</a>
-                <a class="nav-link" href="/contact.html">Contact</a>
+        <!-- Header -->
+        <header class="main-header">
+          <!-- Nav Bar -->
+          <nav
+            class="navbar navbar-expand-lg fixed-top mb-4"
+            style="background-color: #a68dad"
+          >
+            <div class="container-fluid">
+              <!-- Navbar content -->
+              <a class="navbar-brand" href="/index.html">CW</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="/about.html">About</a>
+                  <a class="nav-link disabled">Blog</a>
+                  <a class="nav-link" href="/projects.html">Projects</a>
+                  <a class="nav-link" href="/contact.html">Contact</a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-        <!-- Header -->
+          </nav>
+        </header>
+        <!-- main content -->
 
-        <!-- # -->
-        <h1>Hej!</h1>
-
-        <!-- Footer -->
-        <div class="row">
-          <footer class="footer">
-            <div>© Candace Woodbury 2023.</div>
-            <div>made with lots of espresso</div>
-            <div>
-              while jammin' to
+        <!-- sidebar social and email -->
+        <div orientation="left" class="side-social">
+          <ul class="social-list">
+            <li class="side-social">
+              <a href="https://www.instagram.com/candacemonster/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="side-social">
+              <a href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li class="side-social">
+              <a href="https://github.com/candacemonster"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="side-social">
               <a
-                class="project-link"
-                href="https://music.apple.com/us/playlist/monster-mixtape-2023/pl.u-V9D7moNC1j3LPl"
-                >this playlist.</a
-              >
-            </div>
-          </footer>
+                id="copy-link"
+                data-clipboard-text="candacisms@gmail.com"
+                href="#"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div orientation="right" class="side-email">
+          <div class="email-main">
+            <a href="mailto:candacisms@gmail.com">candacisms@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>

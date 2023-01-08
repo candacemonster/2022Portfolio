@@ -1,5 +1,6 @@
 :root {
-  --font-family: "Mukta", sans-serif;
+  --primary-font-family: "Mukta", sans-serif;
+  --secondary-font-family: "Raleway Dots";
   --main-bg-color: #f0ece3;
   --primary-color: #a68dad;
   --secondary-color: #c7b198;
@@ -7,6 +8,26 @@
 
 body {
   background-color: var(--main-bg-color);
+}
+
+header {
+  padding: 75px 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font-family);
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font-family);
+}
+
+ul .padding {
+  padding: none;
 }
 
 a {
@@ -17,10 +38,80 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.footer {
+.main-select-projects {
+  list-style: none;
+}
+
+.about-img {
+  border-radius: 25% 10%;
+  width: 500px;
+}
+
+.side-social {
+  width: 40px;
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  right: auto;
+  z-index: 10;
+}
+.social-list {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-family: var(--font-family);
-  padding: 15px;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 2.3em;
+  list-style: none;
+}
+
+.side-email {
+  font-size: 18px;
+  font-family: "Raleway Dots";
+  width: 40px;
+  position: fixed;
+  bottom: 15px;
+  left: auto;
+  right: 20px;
+  z-index: 10;
+}
+.email-main {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  writing-mode: vertical-rl;
+}
+
+.ten-things {
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  .main-about {
+    text-align: center;
+  }
+  .skills {
+    text-align: center;
+  }
+  .random-facts {
+    text-align: center;
+  }
+  .side-social {
+    display: none;
+  }
+  .side-email {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer {
+    display: none;
+  }
 }
