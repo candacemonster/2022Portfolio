@@ -1,13 +1,13 @@
 :root {
   --primary-font-family: "Mukta", sans-serif;
   --secondary-font-family: "Raleway Dots";
-  --main-bg-color: #f0ece3;
-  --primary-color: #2b1731;
-  --secondary-color: #c7b198;
+  --main-bg-color: #2a2438;
+  --primary-color: #dbd8e3;
+  --secondary-color: #5c5470;
 }
 
 body {
-  color: #372e3a;
+  color: var(--primary-color);
   background-color: var(--main-bg-color);
 }
 
@@ -27,8 +27,8 @@ h6 {
   font-family: var(--secondary-font-family);
 }
 
-ul .padding {
-  padding: none;
+ul {
+  padding-left: 0px;
 }
 
 a {
@@ -41,12 +41,21 @@ a:hover {
 
 .contact {
   list-style: none;
-  padding-left: 0px;
   line-height: 2.4em;
 }
 
+.navbar-brand {
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+}
+.nav-link {
+  color: var(--primary-color);
+}
+.disabled {
+  color: var(--primary-color);
+}
+
 .main-select-projects {
-  padding-left: 0px;
   list-style: none;
 }
 
@@ -55,6 +64,10 @@ a:hover {
   background-color: var(--primary-color);
   border: 3px;
   border-color: var(--primary-color);
+}
+
+.card {
+  color: #2a2438;
 }
 
 .about-img {
@@ -102,6 +115,7 @@ a:hover {
 
 .ten-things {
   list-style: none;
+  padding-left: 0px;
 }
 
 @media (max-width: 1000px) {
