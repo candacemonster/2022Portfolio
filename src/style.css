@@ -2,11 +2,12 @@
   --primary-font-family: "Mukta", sans-serif;
   --secondary-font-family: "Raleway Dots";
   --main-bg-color: #f0ece3;
-  --primary-color: #a68dad;
+  --primary-color: #2b1731;
   --secondary-color: #c7b198;
 }
 
 body {
+  color: #372e3a;
   background-color: var(--main-bg-color);
 }
 
@@ -38,15 +39,22 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.contact {
+  list-style: none;
+  padding-left: 0px;
+  line-height: 2.4em;
+}
+
 .main-select-projects {
+  padding-left: 0px;
   list-style: none;
 }
 
 .btn-projects {
-  color: #372e3a;
+  color: var(--secondary-color);
   background-color: var(--primary-color);
   border: 3px;
-  border-color: #372e3a;
+  border-color: var(--primary-color);
 }
 
 .about-img {
@@ -96,7 +104,7 @@ a:hover {
   list-style: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .main-about {
     text-align: left;
   }
@@ -119,11 +127,17 @@ a:hover {
     text-align: left;
   }
   .projects {
-    display: block;
     text-align: center;
   }
-  .card-body {
-    padding: 25px;
+  .card {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
   }
 }
 
