@@ -1,14 +1,14 @@
 :root {
   --primary-font-family: "Mukta", sans-serif;
   --secondary-font-family: "Raleway Dots";
-  --main-bg-color: #1d1d20;
+  --main-background-color: #1d1d20;
   --primary-color: #dbd8e3;
   --secondary-color: #5c5470;
 }
 
 body {
   color: var(--primary-color);
-  background-color: var(--main-bg-color);
+  background-color: var(--main-background-color);
 }
 
 header {
@@ -50,7 +50,7 @@ body {
   font-size: 16px;
 }
 nav {
-  background: var(--main-bg-color);
+  background: var(--main-background-color);
   padding: 0 15px;
 }
 a {
@@ -75,7 +75,7 @@ a {
 }
 
 .card {
-  color: #2a2438;
+  color: #1d1d20;
 }
 
 .about-img {
@@ -202,7 +202,7 @@ a {
   padding: 5px 8px;
 }
 .submenu-active {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-background-color);
   border-radius: 3px;
 }
 
@@ -272,7 +272,7 @@ a {
     position: absolute;
     left: 0;
     top: 68px;
-    background: var(--main-bg-color);
+    background: var(--main-background-color);
   }
   .toggle {
     display: none;
