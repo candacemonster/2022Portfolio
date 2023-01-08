@@ -1,1 +1,26 @@
+:root {
+  --font-family: "Mukta", sans-serif;
+  --main-bg-color: #f0ece3;
+  --primary-color: #a68dad;
+  --secondary-color: #c7b198;
+}
 
+body {
+  background-color: var(--main-bg-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-family);
+  padding: 15px;
+}
