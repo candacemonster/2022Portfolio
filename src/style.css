@@ -91,13 +91,16 @@ a:hover {
 
 @media (max-width: 700px) {
   .main-about {
-    text-align: center;
+    text-align: left;
   }
   .skills {
-    text-align: center;
+    text-align: left;
   }
   .random-facts {
-    text-align: center;
+    text-align: left;
+  }
+  .ten-things {
+    padding-left: 0px;
   }
   .side-social {
     display: none;
@@ -106,7 +109,7 @@ a:hover {
     display: none;
   }
   .footer {
-    text-align: center;
+    text-align: left;
   }
 }
 
