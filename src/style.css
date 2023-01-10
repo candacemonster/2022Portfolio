@@ -53,6 +53,10 @@ ul {
   padding-left: 0px;
 }
 
+img {
+  max-width: 75%;
+}
+
 .contact {
   list-style: none;
   line-height: 2.4em;
@@ -280,6 +284,7 @@ ul {
 
 @media (max-width: 1101px) {
   img {
+    text-align: left;
     width: 75%;
   }
   .select-projects {
