@@ -284,7 +284,7 @@ img {
 
 @media (max-width: 1101px) {
   img {
-    text-align: left;
+    text-align: center;
     width: 75%;
   }
   .select-projects {
