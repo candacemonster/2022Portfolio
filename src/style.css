@@ -283,6 +283,9 @@ img {
 }
 
 @media (max-width: 1101px) {
+  img {
+    align-items: center;
+  }
   .select-projects {
     margin-top: 22px;
   }
@@ -328,6 +331,9 @@ img {
 }
 
 @media (min-width: 1101px) {
+  img {
+    align-items: center;
+  }
   .footer {
     display: none;
     height: 100vh;
