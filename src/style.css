@@ -279,6 +279,9 @@ ul {
 }
 
 @media (max-width: 1101px) {
+  img {
+    width: 100%;
+  }
   .select-projects {
     margin-top: 22px;
   }
