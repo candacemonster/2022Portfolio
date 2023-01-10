@@ -45,7 +45,8 @@ h3 {
 h4,
 h5,
 h6 {
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family);
+  font-weight: 200;
 }
 
 ul {
@@ -97,8 +98,9 @@ ul {
 }
 
 .side-email {
+  font-family: var(--primary-font-family);
   font-size: 18px;
-  font-family: "Raleway Dots";
+  font-weight: 200;
   width: 40px;
   position: fixed;
   bottom: 15px;
