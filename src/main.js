@@ -77,3 +77,20 @@ function closeSubmenu(e) {
 }
 /* Event listener */
 document.addEventListener("click", closeSubmenu, false);
+
+/* Skills Bar Graph */
+const values = [90, 100, 70, 50, 80, 75, 80, 40, 35, 30, 15];
+
+const bars = document.querySelectorAll(".bar");
+
+bars.forEach((bar, index) => {
+  const value = values[index];
+  const valueLabel = bar.querySelector(".value");
+
+  bar.style.height = value + "%";
+  valueLabel.style.height = "100%";
+  valueLabel.style.backgroundColor = "#baa7d9";
+  valueLabel.style.backgroundImage =
+    "linear-gradient(to top, #baa7d9, #8e75a3)";
+  valueLabel.style.content = "";
+});
