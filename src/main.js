@@ -79,7 +79,7 @@ function closeSubmenu(e) {
 document.addEventListener("click", closeSubmenu, false);
 
 /* Skills Bar Graph */
-const values = [90, 100, 70, 50, 80, 75, 80, 40, 35, 30, 15];
+const values = [90, 100, 70, 80, 75, 80, 40, 35, 30, 15];
 
 const bars = document.querySelectorAll(".bar");
 
