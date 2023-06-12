@@ -107,9 +107,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 200px;
+  padding-left: 150px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .resume-content {
@@ -160,6 +160,11 @@ h2 {
   padding: 0 20px 20px;
 }
 
+.social-icons {
+  font-size: 12px; /* Adjust the size of the icons as needed */
+  padding-right: 18px;
+}
+
 .social-icons, .skills-icons {
   display: flex;
   justify-content: center;
@@ -183,7 +188,7 @@ h2 {
 }
 
 .menu i {
-  font-size: 40px; /* Adjust the size of the icons as needed */
+  font-size: 32px; /* Adjust the size of the icons as needed */
   padding-top: 20px;
   margin-bottom: 0; /* Remove spacing between icons */
   margin-right: 12px; /* Add spacing between icons horizontally */
@@ -207,16 +212,76 @@ h2 {
   margin-bottom: 20px;
 } 
 
-img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 200px;
+}
+
+@media (max-width: 768px) {  /* 768px is a common breakpoint for tablets and below */
+  body {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  footer {
+    padding-top: 25px;
+  }
+
+  .parent {
+    margin-top: 3px;
+    grid-template-columns: 1fr;  /* Stack content in a single column */
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Arrange children vertically */
+  }
+
+  .menu {
+    order: 1; /* Will be the first */
+  }
+
+  .child {
+    position: static;  /* Removes absolute positioning */
+    width: 100%;  /* Full width of the parent */
+    height: auto;  /* Adjusts the height */
+    padding-left: 55px;
+    transform: none;  /* Removes the transform */
+    margin: 0;  /* Centering the image */
+    order: 2; /* Will be the second */
+  }
+
+  .social-icons {
+    order: 3; /* Will be the third */
+  }
+
+  .menu, .social-icons {
+    position: static;  /* Removes absolute positioning */
+    flex-direction: row;  /* Makes menu horizontal */
+    justify-content: center;  /* Centering the menu */
+    margin-bottom: 10px;  /* Space below the menu */
+    flex-wrap: wrap;  /* Allow icons to wrap onto next line if needed */
+    z-index: 999; /* High z-index to ensure it is on top */
+  }
+
+  .menu i, .social-icons i {
+    font-size: 24px; /* Adjust the size of the icons as needed, made smaller for mobile */
+    padding-top: 10px; /* Adjust spacing between icons */
+  }
+
+  .cv-download {
+    padding: 0;
+  }
+  
+
+  .resume {
+    display: none;  /* Hides the content on the right */
+  }
 }

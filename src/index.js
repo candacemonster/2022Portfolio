@@ -1,6 +1,24 @@
-document.getElementById('theme-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme');
+// Function to toggle the theme
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-theme');
+
+  // Store the theme preference in localStorage
+  const isDarkTheme = body.classList.contains('dark-theme');
+  localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+}
+
+// Retrieve the theme preference from localStorage on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const storedTheme = localStorage.getItem('theme');
+  if (storedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
 });
+
+// Attach the toggleTheme function to the theme toggle button
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', toggleTheme);
 
 document.addEventListener("DOMContentLoaded", function() {
   const copyLink = document.getElementById("copy-link");
