@@ -1,169 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <head>
-      <meta
-        name="description"
-        content="This is the personal portfolio of Candace Woodbury. A front-end developer in-training."
-      />
-    </head>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- CSS Custom Stylesheet -->
-    <link rel="stylesheet" href="/src/style.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;800&family=Raleway+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/058f0e08dd.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/path/to/favicon.ico" />
-    <title>Candace Woodbury</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <!-- Header -->
-        <header class="main-header">
-          <!-- Nav Bar -->
-          <nav>
-            <ul class="menu">
-              <li class="logo">
-                <a href="/index.html" title="Candace Woodbury Portfolio">CW</a>
-              </li>
-              <li class="item">
-                <a href="/about.html" title="About Candace Woodbury.">About</a>
-              </li>
-              <li class="item">
-                <a href="https://www.candace.monster/">Blog</a>
-              </li>
-              <li class="item">
-                <a href="/projects.html" title="Candace Woodbury Projects."
-                  >Projects</a
-                >
-              </li>
-              <li class="item">
-                <a href="/contact.html" title="Contact Candace Woodbury."
-                  >Contact</a
-                >
-              </li>
-              <li class="toggle">
-                <a href="#"><i class="fas fa-bars"></i></a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <!-- main content -->
-        <main class="row">
-          <div class="col-sm-8">
-            <h5>Hi, my name is</h5>
-            <h1>Candace Woodbury</h1>
-            <h4>
-              I am a front-end developer (in-training 🤪), with a background in
-              Adventure Travel & Tourism and Academic Research in Environmental
-              Health. Currently my focus in SaaS Support & QA.
-            </h4>
-            <br />
-            <h5 class="learn-more">
-              <a href="/about.html">learn more about me → </a>
-            </h5>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="/src/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/058f0e08dd.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <title>Candace Woodbury</title>
+</head>
+<body>
+  <div class="container">
+    <div class="parent">
+      <h2></h2>
+      <div class="child">
+        <img src="/media/candacewoodbury.JPG" alt="candace woodbury">
+        <div class="overlay">
+          <h1>Candace Woodbury</h1>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/candacemonster/"><i class="fa-brands fa-instagram fas fa-user fa-3x"></i></a>              
+            <a href="https://github.com/candacemonster"><i class="fa-brands fa-github fas fa-user fa-3x"></i></a>              
+            <a href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"><i class="fa-brands fa-youtube fas fa-user fa-3x"></i></a>
+            <a id="copy-link" data-clipboard-text="c.woodbury@protonmail.com" href="#"><i class="fa-regular fa-envelope fas fa-user fa-3x"></i></a>
           </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-3">
-            <div class="select-projects">
-              <h4>Select Projects</h4>
-              <ul class="main-select-projects">
-                <li>
-                  <a
-                    href="https://www.shecodes.io/workshops/shecodes-basics-b25d9815-ace9-4647-be8e-e8f861f89503/projects/1130066"
-                    title="Honey Lavendar Latte App by Candace Woodbury for SheCodes Project."
-                    >Honey Lavender Lattes</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://flourishing-licorice-d6081d.netlify.app/"
-                    title="Weather App by Candace Woodbury for SheCodes Project."
-                    >Monster Weather</a
-                  >
-                </li>
-              </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <button id="theme-toggle"><i class="fas fa-moon fas fa-user fa-2x"></i></button>
+        <div class="menu-icons"></div>
+        <a href="/pages/experience.html"><i class="fa-regular fa-briefcase fas fa-user fa-3x"></i></a>  
+        <a href="/pages/education.html"><i class="fa-regular fa-graduation-cap fas fa-user fa-3x"></i></a> 
+        <a href="/pages/projects.html"><i class="fa-regular fa-mug-hot fas fa-user fa-3x"></i></a> 
+        <a href="#"><i class="fa-sharp fa-light fa-ice-cream fas fa-user fa-3x"></i></a> 
+        <a href="/index.html" class="cv-download"><i class="fa-regular fa-file-arrow-down fas fa-user fa-3x"></i></a> 
+      </div>
+      <div class="resume">
+        <div class="resume-section" id="about-me">
+          <h2>About Me</h2>
+          <div class="resume-content">
+            <p>I'm Candace Woodbury, a versatile professional experienced in travel and tourism, onboarding management, and front-end development. As an Onboarding Manager at Resmark Systems, a top travel and tourism software solutions company, I ensure seamless integration for our clients.</p>
+            <p>With a strong background in reservations, operations, and marketing, I possess a deep understanding of the industry. Simultaneously, my passion for technology led me to become a junior front-end developer, creating user-friendly web applications.</p>
+            <p>I am dedicated to client satisfaction and excel in optimizing operations through seamless software integration. My commitment to exceptional service and proactive problem-solving makes me an asset to any project.</p>
+            <p>Let's connect and explore how my expertise in onboarding management, travel and tourism, and front-end development can benefit your initiatives.</p>
+          </div>
+        </div>
+        <div class="resume-section" id="experience">
+          <h2>Experience</h2>
+          <div class="resume-content">
+            <p class="exp-dates">2020 - NOWDAYS</p>
+            <h4>resmark systems, onboarding manager</h4>
+            <p clas="location">SALT LAKE CITY, UT, USA</p>
+            <p>As an Onboarding Manager at Resmark Systems, I oversee seamless integration of clients into our innovative travel and tourism software solutions.</p>
+            <p class="exp-dates">2017-2023</p>
+            <h4>environmental health trust, research specialist</h4>
+            <p clas="location">JACKSON, WY, USA</p>
+            <p>As a Research Specialist at Environmental Health Trust, I utilize my expertise in academic and technical research to support initiatives focused on environmental exposures and public health.</p>
+            <p class="exp-dates">2012-2016</p>
+            <h4>forever results, multiple</h4>
+            <p clas="location">JACKSON, WY - SCOTTSDALE, AZ, USA</p>
+            <p>During my tenure at Forever Resorts Properties in Jackson Hole, I started as an Office Manager and Reservationist, gradually advancing to Director of Sales and Marketing, where I successfully oversaw luxury, VIP, and group sales while managing various operational aspects.</p>
+          </div>
+        </div>
+        <div class="resume-section" id="education">
+          <h2>Education</h2>
+          <div class="education-content">
+              <div class="education-details">
+                  <h4>UNIVERSITY OF WYOMING</h4>
+                  <h5>Bachelor of Arts Social Science | 2017</h5>
+                  <p>History, Anthropology, Religion</p>
+                  <p class="location">Jackson, WY</p>
+      
+                  <h4>CENTRAL WYOMING COLLEGE | YYYY</h4>
+                  <h5>Associates</h5>
+                  <p>General Education</p>
+                  <p class="location">Jackson, WY</p>
+              </div>
+          </div>
+      </div>           
+        <div class="resume-section" id="skills-expertise">
+          <h2>Skills & Expertise</h2>
+          <div class="resume-content">
+            <p><strong>Project Management:</strong>Ability to effectively plan, organize, and execute projects within the travel and tourism industry.</p>
+            <p><strong>Customer Relationship Management (CRM):</strong>Proficiency in using CRM systems to manage client interactions, track sales, and enhance customer satisfaction.</p>
+            <p><strong>Data Analysis:</strong>Expertise in analyzing and interpreting data to drive informed business decisions and optimize operations.</p>
+            <p><strong>Training and Development:</strong>Experience in designing and delivering training programs to onboard new employees and enhance their skills.</p>
+            <p><strong>Team Leadership:</strong>Ability to lead and motivate teams, fostering collaboration and achieving shared goals.</p>
+            <p><strong>Social Media Marketing:</strong>Demonstrating your knowledge and experience in utilizing social media platforms to promote brands, engage with customers, and drive business growth.</p>
+            <p><strong>Quality Assurance:</strong>Attention to detail and ability to ensure high standards of quality in processes, products, or services within the travel and tourism industry.</p>
+            <p><strong>Google Workspace:</strong>Proficiency in utilizing Google's suite of productivity tools, including Google Docs, Google Sheets, Google Slides, Google Drive, and Google Calendar. Ability to collaborate, create, and manage documents and data effectively using cloud-based solutions.</p>
+          </div>
+            <div class="row skills-icons">
+              <i class="fa-brands fa-hubspot"></i>              
+              <i class="fa-brands fa-html5"></i>              
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-bootstrap"></i>            
             </div>
-          </div>
-        </main>
-        <div class="row"></div>
-
-        <!-- sidebar social and email -->
-        <div orientation="left" class="side-social">
-          <ul class="social-list">
-            <li>
-              <a href="https://www.instagram.com/candacemonster/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/candacemonster"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                id="copy-link"
-                data-clipboard-text="candacisms@gmail.com"
-                href="#"
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
-            </li>
-            <li>...</li>
-          </ul>
+            <div class="row skills-icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-npm"></i>
+              <i class="fa-brands fa-figma"></i>
+              <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="projects">
+              <a href="/pages/projects.html"><p>VIEW MY PROJECTS</p></a>
+            </div>
         </div>
-        <div orientation="right" class="side-email">
-          <div class="email-main">
-            <a href="mailto:candacisms@gmail.com">candacisms@gmail.com</a>
-          </div>
+        <div class="resume-section" id="contact-information">
+          <h2>Contact Information</h2>
+          <div id="contact-info"></div>
         </div>
-
-        <!-- footer -->
-        <footer class="footer">
-          © <a href="/about.html">Candace Woodbury</a> 2023.
-          <div>made with 🤍 & a lot of espresso.</div>
-          <div class="">
-            View
-            <a
-              class=""
-              href="https://github.com/candacemonster/2023Portfolio.git"
-              >source</a
-            >.
-          </div>
-        </footer>
+        <footer>© 2023 🖤 + ☕️ candace coded</footer>
       </div>
     </div>
-    <script src="/src/main.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+<script src="/src/index.js"></script>
+</body>
 </html>
