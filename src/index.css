@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 48px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+h3,
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: #FF80B4;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+li {
+  padding-top: 8px;
+}
+
+a {
+  color: inherit; /* Use the default text color */
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a:hover {
+  text-shadow: 0 0 5px rgba(255, 12, 253, 0.8); /* Apply a shadow with the desired gradient color */
+  animation: shake 0.4s infinite; /* Apply the shake animation */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px) rotate(-5deg); }
+  20% { transform: translateX(5px) rotate(5deg); }
+  30% { transform: translateX(-5px) rotate(-5deg); }
+  40% { transform: translateX(5px) rotate(5deg); }
+  50% { transform: translateX(-5px) rotate(-5deg); }
+  60% { transform: translateX(5px) rotate(5deg); }
+  70% { transform: translateX(-5px) rotate(-5deg); }
+  80% { transform: translateX(5px) rotate(5deg); }
+  90% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8; /* Adjust the opacity as desired */
+  z-index: -1;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+}
+
+.headshot-column {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 300px; /* Adjust the width as needed */
+  height: calc(100vh - 50px);
+  padding-right: 20px; /* Add some spacing between the headshot column and the left column */
+  overflow: hidden;
+}
+
+.headshot-column img {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  flex: 1 0 0;
+  padding: 10px;
+  min-width: 0;
+}
+
+.left-column {
+  flex: none;
+  height: calc(100vh - 50px);
+  left: 325px;
+  position: fixed;
+  overflow: auto;
+  top: 50px;
+  width: 610px;
+  z-index: 1;
+}
+
+.left-column {
+  /* ...existing styles... */
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: transparent transparent; /* Color of the thumb and track */
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+.left-column::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+  background-color: transparent; /* Background color of the scrollbar */
+}
+
+.left-column::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color of the scrollbar thumb */
+}
+
+.left-column::-webkit-scrollbar-track {
+  background-color: transparent; /* Background color of the scrollbar track */
+}
+
+/* Firefox */
+.left-column {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+}
+
+.left-column::-webkit-scrollbar-track {
+  background-color: transparent; /* Background color of the scrollbar track */
+}
+
+.left-column::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color of the scrollbar thumb */
+}
+
+.left-column::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb on hover */
+}
+
+.left-column::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.4); /* Color of the scrollbar thumb when active */
+}
+
+.right-column {
+  flex: none;
+  height: 495px;
+  position: fixed;
+  right: 80px;
+  top: 110px;
+  width: 240px;
+  z-index: 1;
+}
+
+.lower-right {
+  margin-top: 630px;
+}
+
+.right-text {
+  padding-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.skills-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    padding: 25px;
+    align-items: center; /* Center content vertically */
+  }
+
+  .headshot-column {
+    display: none;
+  }
+
+  .column {
+    flex: none;
+    width: 100%;
+  }
+
+  .left-column {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    top: initial;
+    left: initial;
+    overflow: initial;
+    z-index: initial;
+  }
+
+  .lower-right {
+    margin-top: 50px;
+  }
+
+  .right-column {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .headshot-column {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 175px; /* Adjust the width as needed */
+    height: calc(100vh - 50px);
+    padding-right: 20px; /* Add some spacing between the headshot column and the left column */
+    overflow: hidden;
+  }
+
+  .left-column {
+    position: relative;
+    left: 125px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    z-index: auto;
+  }
+
+  .lower-right {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headshot-column {
+    display: none;
+  }
+
+  .left-column {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: auto;
+    z-index: auto;
+  }
+}
