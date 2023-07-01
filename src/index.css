@@ -52,15 +52,15 @@ li {
 }
 
 a {
-  color: inherit; /* Use the default text color */
+  color: inherit;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
 a:hover {
-  text-shadow: 0 0 5px rgba(255, 12, 253, 0.8); /* Apply a shadow with the desired gradient color */
-  animation: shake 0.4s infinite; /* Apply the shake animation */
+  text-shadow: 0 0 5px rgba(255, 12, 253, 0.8);
+  animation: shake 0.4s infinite;
 }
 
 @keyframes shake {
@@ -84,7 +84,7 @@ a:hover::before {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.8; /* Adjust the opacity as desired */
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -92,16 +92,16 @@ a:hover::before {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center;
 }
 
 .headshot-column {
   position: fixed;
   top: 50px;
   left: 0;
-  width: 300px; /* Adjust the width as needed */
+  width: 300px;
   height: calc(100vh - 50px);
-  padding-right: 20px; /* Add some spacing between the headshot column and the left column */
+  padding-right: 20px;
   overflow: hidden;
 }
 
@@ -128,45 +128,42 @@ a:hover::before {
 }
 
 .left-column {
-  /* ...existing styles... */
-  overflow: auto; /* Enable scrolling */
-  scrollbar-width: thin; /* Set the width of the scrollbar */
-  scrollbar-color: transparent transparent; /* Color of the thumb and track */
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
-/* Webkit Browsers (Chrome, Safari) */
 .left-column::-webkit-scrollbar {
-  width: 8px; /* Adjust the width as needed */
-  background-color: transparent; /* Background color of the scrollbar */
+  width: 8px;
+  background-color: transparent;
 }
 
 .left-column::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color of the scrollbar thumb */
+  background-color: transparent;
 }
 
 .left-column::-webkit-scrollbar-track {
-  background-color: transparent; /* Background color of the scrollbar track */
+  background-color: transparent;
 }
 
-/* Firefox */
 .left-column {
-  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-width: thin;
 }
 
 .left-column::-webkit-scrollbar-track {
-  background-color: transparent; /* Background color of the scrollbar track */
+  background-color: transparent;
 }
 
 .left-column::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color of the scrollbar thumb */
+  background-color: transparent;
 }
 
 .left-column::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb on hover */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .left-column::-webkit-scrollbar-thumb:active {
-  background-color: rgba(0, 0, 0, 0.4); /* Color of the scrollbar thumb when active */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .right-column {
@@ -200,11 +197,53 @@ a:hover::before {
   padding-left: 20px;
 }
 
+.cv-download {
+  padding-top: 25px;
+  padding-bottom: 75px;
+
+}
+
+.cv-link {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+}
+
+.cv-link:hover {
+  color: #FF80B4;
+  animation: none; /* Remove the animation */
+}
+
+.cv-link i {
+  font-size: 24px;
+}
+
+.cv-link span {
+  font-size: 18px;
+}
+
+a.cv-download {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a.cv-download:hover {
+  text-shadow: none;
+}
+
+a.cv-download:hover::before {
+  content: none;
+}
+
 @media (max-width: 960px) {
   .container {
     flex-direction: column;
     padding: 25px;
-    align-items: center; /* Center content vertically */
+    align-items: center;
   }
 
   .headshot-column {
@@ -237,14 +276,14 @@ a:hover::before {
   }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 1250px) and (orientation: landscape) {
   .headshot-column {
     position: fixed;
     top: 50px;
     left: 0;
-    width: 175px; /* Adjust the width as needed */
+    width: 175px;
     height: calc(100vh - 50px);
-    padding-right: 20px; /* Add some spacing between the headshot column and the left column */
+    padding-right: 20px;
     overflow: hidden;
   }
 
