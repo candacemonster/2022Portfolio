@@ -99,7 +99,6 @@
     z-index: -1;
   }
   
-  
   .container {
     padding: 40px;
     display: flex;
@@ -139,7 +138,7 @@
   }
 
   .lower-right {
-    margin-top: 630px;
+    margin-top: 600px;
   }
 
   .right-text {
@@ -199,7 +198,7 @@
     text-align: right;
   }
   
-  @media (max-width: 960px) {
+  @media (max-width: 1140px) {
     .container {
         flex-direction: column;
         padding: 25px;
@@ -250,7 +249,7 @@
       }
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 1024px) {
         .container {
           justify-content: center;
           align-items: center;
