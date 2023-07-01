@@ -24,6 +24,11 @@
     opacity: 0.4;
     z-index: -1;
   }
+
+  h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 48px;
+  }
   
   h2 {
     margin-top: 0;
