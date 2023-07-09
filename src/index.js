@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-    // Get the current time in MST
+  function updateCurrentTime() {
     var currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Denver", hour12: false });
-    // Display the current time
     document.getElementById("current-time").textContent = currentTime;
+  }
   
-
-
+  updateCurrentTime();
+  setInterval(updateCurrentTime, 1000);
   
