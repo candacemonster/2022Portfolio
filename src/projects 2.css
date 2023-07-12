@@ -11,15 +11,20 @@ body {
 h1 {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 48px;
+  margin: 0;
 }
 
 h2 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 20px;
+  padding-bottom: 0;
 }
 
-h3, p {
-  margin: 15px 0;
+h3,
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -27,19 +32,22 @@ p {
 }
 
 h4 {
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h5 {
   color: #FF80B4;
   font-size: 18px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
   list-style-type: none;
   line-height: 12px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 20px;
 }
 
@@ -76,6 +84,17 @@ footer {
   80% { transform: translateX(5px) rotate(5deg); }
   90% { transform: translateX(-5px) rotate(-5deg); }
   100% { transform: translateX(0); }
+}
+
+a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 a:hover::before {
@@ -172,7 +191,8 @@ a:hover::before {
 .social-icons {
   display: flex;
   gap: 20px;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .skills-icons {
@@ -223,6 +243,78 @@ a.cv-download:hover::before {
   content: none;
 }
 
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 250px); /* Adjust the height to leave space for other elements */
+  padding-bottom: 20px; /* Add padding at the bottom of the cards */
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-detail img {
+  height: 300px;
+  width: 400px;
+}
+
+.project-image {
+  width: 25%;
+  height: auto;
+  padding-right: 15px;
+}
+
+.project-description {
+  width: 55%;
+}
+
+.view-project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headshot-column {
+    display: none;
+  }
+
+  .resume-column {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    z-index: auto;
+  }
+}
+
 @media (max-width: 960px) {
   .container {
     flex-direction: column;
@@ -254,6 +346,37 @@ a.cv-download:hover::before {
   }
 }
 
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headshot-column {
+      display: none;
+    }
+
+  .project-image {
+    display: none;
+  }
+
+  .project-detail {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  .view-project-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1250px) and (orientation: landscape) {
   .headshot-column {
     position: fixed;
@@ -276,24 +399,5 @@ a.cv-download:hover::before {
   
   footer {
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .headshot-column {
-    display: none;
-  }
-
-  .resume-column {
-    position: static;
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    z-index: auto;
   }
 }
