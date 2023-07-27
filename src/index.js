@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function updateCurrentTime() {
-    var currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Denver", hour12: false });
+    var currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Los_Angeles", hour12: false });
     document.getElementById("current-time").textContent = currentTime;
   }
   
