@@ -1,170 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC80GDW5EE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SC80GDW5EE"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-SC80GDW5EE');
+      gtag("config", "G-SC80GDW5EE");
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="/src/index.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/058f0e08dd.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/058f0e08dd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N8R5MPH');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N8R5MPH");
+    </script>
     <!-- End Google Tag Manager -->
-    <title>candace woodbury</title>
-</head>
-<body>
-<!-- End of bodyStart -->
-<div class="wrapper">
-    <div class="container">
-        <div class="headshot-column">
-            <!-- Content for the headshot column -->
-            <img src="/public/candacewoodbury.JPG" alt="Headshot">
-        </div>
-        <div class="column">
-            <!-- Content for the first column -->
-            <div class="resume-column">
-                <div>
-                    <h1>Candace Woodbury</h1>
-                    <p>Hi there! I'm Candace, onboarding manager by day, budding front-end developer by night,
-                        <em>espresso enthusiast at all times.</em></p>
-                    <p>Navigating the digital world one sip and script at a time, I sprinkle a dash of whimsy and a pinch of quirk in all that I do. 😜</p>
-                </div>
+    <title>Candace Woodbury</title>
+    <!-- STYLESHEET -->
 
-                <div>
-                    <strong>
-                        <a id="copy-link" data-clipboard-text="c.woodbury@protonmail.com" href="#"><i class="fa-regular fa-envelope"></i></a>
-                        <span>c.woodbury@protonmail.com</span>
-                    </strong>
-                </div>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <h1 class="site-title">Candace Woodbury</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="#" onclick="underConstructionAlert()">Projects</a></li>
+          <!-- 'med.html' link removed since it's a secret page -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <p>
+          Onboarding manager by day, budding front-end developer by night, ✨
+          ☕️ espresso enthusiast at all times.
+        </p>
+      </div>
+      <div>
+        <p>Navigating the digital world one sip and script at a time.</p>
+      </div>
 
-                <div>
-                    <h2>experience</h2>
-                    <ul>
-                        <li>
-                            <p>2020 - NOWDAYS</p>
-                            <h3>resmark systems, onboarding manager</h3>
-                            <p>SALT LAKE CITY, UT</p>
-                        </li>
-                        <li>
-                            <p>2019 - 2023</p>
-                            <h3>environmental health trust, research specialist</h3>
-                            <P>JACKSON, WY</P>
-                            <p>During my time at Environmental Health Trust, I served as a Research Specialist, utilizing my expertise in academic and technical research to support initiatives focused on environmental exposures and public health.</p>
-                        </li>
-                        <li>
-                            <p>2012 - 2016</p>
-                            <h3>forever results, multiple hats</h3>
-                            <p>JACKSON, WY - SCOTTSDALE, AZ, USA</p>
-                            <p>My tenure at Forever Resorts Properties in Jackson Hole began as an Office Manager and Reservationist, progressing to the role of Director of Sales and Marketing. In this capacity, I not only successfully managed luxury, VIP, and group sales while handling various operational aspects, but I also represented Forever Resorts at major trade shows and ski shows, including those attended in collaboration with the Jackson Hole Chamber and Jackson Hole Mountain Resort.</p>
-                        </li>
-                        <li>
-                            <p>2009 - 2012, 2016</p>
-                            <h3>hines goldsmiths, luxury sales associate</h3>
-                            <p>JACKSON, WY</p>
-                        </li>
-                    </ul>
-                </div>
+      <div class="social-media-icons">
+        <a
+          href="https://github.com/candacemonster"
+          target="_blank"
+          class="icon-link"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/candacewoodbury/"
+          target="_blank"
+          class="icon-link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"
+          target="_blank"
+          class="icon-link"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/candacemonster/"
+          target="_blank"
+          class="icon-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
 
-                <div>
-                    <h2>skills</h2>
-                    <div class="row skills-icons">
-                        <i class="fa-brands fa-hubspot"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-bootstrap"></i>
-                    </div>
-                    <div class="row skills-icons">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-react"></i>
-                        <i class="fa-brands fa-npm"></i>
-                        <i class="fa-brands fa-figma"></i>
-                        <i class="fa-brands fa-wordpress"></i>
-                    </div>
-                </div>
+      <div>
+        <p>Location:📍 Las Vegas, NV</p>
+        <p>Local Time: <span id="time"></span></p>
+      </div>
 
-                <div>
-                    <h2>education</h2>
-                    <ul>
-                        <li>
-                            <p>2017</p>
-                            <h3>university of wyoming</h3>
-                            <p>BACHELOR OF ARTS SOCIAL SCIENCE</p>
-                            <p>Concentrations: History, Anthropology, Religion</p>
-                        </li>
-                        <li>
-                            <p>2013</p>
-                            <h3>central wyoming college</h3>
-                            <p>ASSOCIATE OF ARTS</p>
-                            <p>Concentrations: General Studies</p>
-                        </li>
-                        <li>
-                            <p>2011</p>
-                            <h3>gia (gemological institute of america)</h3>
-                            <p>GRADUATE GEMOLOGIST</p>
-                            <p>Concentrations: Gemology</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="cv-download">
-                    <a href="path/to/your/cv.pdf" download class="cv-link cv-download">
-                      <i class="fa-solid fa-file-arrow-down"></i>
-                      <span>Download CV</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sticky Footer -->
-    <footer class="footer">
-            <div>
-                <div>
-                    <h4>currently in Las Vegas, NV</h4>
-                    <h5 id="current-time"></h5>
-                </div>
-                <div class="social-icons">
-                    <a href="https://github.com/candacemonster"><i class="fa-brands fa-github fas fa-user fa-1x"></i></a>
-                    <a href="https://www.linkedin.com/in/candacewoodbury/"><i class="fa-brands fa-linkedin fas fa-user fa-1x"></i></a>
-                    <a href="https://www.youtube.com/channel/UCrXRSIIoU7EslIWW9ObcmGw"><i class="fa-brands fa-youtube fas fa-user fa-1x"></i></a>
-                    <a href="https://www.instagram.com/candacemonster/"><i class="fa-brands fa-instagram fas fa-user fa-1x"></i></a>
-                </div>
-            </div>
-            <div class="right-text">
-                <a href="/pages/projects.html"><i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                <span>view my projects</span>
-            </div>
-            <div class="right-text">
-                <a href="https://candace.monster"><i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                <span>candace monster</span>
-            </div>
-        <div>
-            © 2023 🖤 + ☕️ candace coded
-        </div>
+      <!-- Content of your main section -->
+    </main>
+    <footer>
+      <p>&copy; 2023 Candace Coded ☕️</p>
+      Contact me at:
+      <a href="mailto:c.woodbury@protonmail.com">c.woodbury@protonmail.com</a>
     </footer>
-</div>
-<!-- End of bodyEnd -->
-<script src="src/index.js"></script>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8R5MPH"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-</body>
+    <script src="js/script.js"></script>
+    <script src="js/time-location.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N8R5MPH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
 </html>
