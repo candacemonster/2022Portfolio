@@ -1,0 +1,28 @@
+.med-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.med-container h2 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.med-section {
+  margin-bottom: 2rem;
+}
+
+.med-section h3 {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.med-section p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
