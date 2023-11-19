@@ -1,0 +1,180 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Reset and Root Variables */
+/* ... */
+
+:root {
+  --color-background: #fafafa; /* Existing background color */
+  --color-text: #333; /* Existing text color */
+  --color-accent: #a87c63; /* Existing accent color */
+  --link-color: #333; /* Primary link color - using the accent color */
+  --link-hover: #8b6a53; /* Darker shade for hover - you can adjust this */
+}
+
+/* Link Styles */
+a {
+  color: var(--link-color);
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: underline; /* Adds underline on hover for better visibility */
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 3rem 0; /* Ample space for a breathable header */
+}
+
+.site-title {
+  font-size: 2rem; /* Size down for less dominance */
+  margin-bottom: 1rem; /* Spacing between title and nav */
+}
+
+/* Navigation */
+.site-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between navigation items */
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500; /* Less boldness for a lighter feel */
+  transition: color 0.3s;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--color-accent);
+}
+
+/* Hamburger Menu - initially hidden */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: space-around; /* Spaces out the bars */
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-text);
+  transition: background-color 0.3s;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: left;
+  gap: 20px; /* Adjust gap between icons as needed */
+  margin: 20px 0;
+}
+
+.icon-link {
+  color: var(--color-accent); /* Your accent color */
+  font-size: 1.5rem; /* Adjust icon size as needed */
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: darken(var(--color-accent), 10%); /* Slightly darker color on hover */
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 2rem auto; /* Centering the main content */
+}
+
+main p {
+  font-size: 1.25rem; /* Larger font size for readability */
+  color: var(--color-text); /* Text color */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+main .location-time p {
+  font-size: 1rem; /* Appropriate font size for time and location */
+  color: var(--color-accent); /* Use of accent color */
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--color-background);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Responsive Design for smaller devices */
+@media (max-width: 550px) {
+  .menu-toggle {
+    display: flex; /* Shows the menu toggle in mobile view */
+  }
+
+  .site-nav ul {
+    display: none; /* Hide the full navigation menu initially */
+    position: absolute;
+    top: 100%; /* Position it directly below the header */
+    right: 0;
+    background-color: var(--color-background);
+    width: 100%; /* Full width of the screen */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .site-nav ul.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .site-title {
+    font-size: 1.5rem; /* Responsive font size for the title */
+  }
+
+  main p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  main .location-time p {
+    font-size: 0.875rem; /* Smaller font size for time and location on mobile */
+  }
+}
