@@ -1,16 +1,31 @@
-// hamburger menu
-document.addEventListener("DOMContentLoaded", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
-  const navList = document.querySelector(".site-nav ul");
+// Light & Dark Theme
+document.addEventListener('DOMContentLoaded', function () {
+  const themeToggle = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
 
-  mobileMenu.addEventListener("click", function () {
-    navList.classList.toggle("active");
+  // Set the initial theme
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  // Update icons based on the current theme
+  if (currentTheme === 'dark') {
+      feather.replace({ class: 'icon-light' });
+  } else {
+      feather.replace({ class: 'icon-dark' });
+  }
+
+  // Event listener for the theme toggle button
+  themeToggle.addEventListener('click', function () {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      
+      // Set the new theme
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+
+      // Update icons based on the new theme
+      if (newTheme === 'dark') {
+          feather.replace({ class: 'icon-light' });
+      } else {
+          feather.replace({ class: 'icon-dark' });
+      }
   });
 });
-
-// page under construction
-function underConstructionAlert() {
-  alert(
-    "The Projects page is currently under construction. Please check back soon for updates!"
-  );
-}
