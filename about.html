@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <head>
-      <meta
-        name="description"
-        content="This is the personal portfolio of Candace Woodbury. A front-end developer in-training."
-      />
-    </head>
+    <meta
+      name="description"
+      content="About Candace Woodbury. A front-end developer in-training."
+    />
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -19,6 +18,7 @@
     />
     <!-- CSS Custom Stylesheet -->
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="sylesheet" href="/src/skills.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +33,7 @@
     ></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/path/to/favicon.ico" />
-    <title>Candace Woodbury</title>
+    <title>About Candace</title>
   </head>
   <body>
     <div class="wrapper">
@@ -69,45 +69,103 @@
           </nav>
         </header>
         <!-- main content -->
-        <main class="row">
-          <div class="col-sm-8">
-            <h5>Hi, my name is</h5>
-            <h1>Candace Woodbury</h1>
-            <h4>
-              I am a front-end developer (in-training 🤪), with a background in
-              Adventure Travel & Tourism and Academic Research in Environmental
-              Health. Currently my focus in SaaS Support & QA.
-            </h4>
-            <br />
-            <h5 class="learn-more">
-              <a href="/about.html">learn more about me → </a>
-            </h5>
+        <section>
+          <div class="clearfix">
+            <img
+              src="/media/stargazing_cotton_candy_girl.jpg"
+              class="col-md-6 float-md-end mb-3 ms-md-3 about-img"
+              alt="Stargazing girl with long hair."
+            />
+            <div class="main-about">
+              <h1>about me</h1>
+              <h3>
+                SaaS Support | Academic Research | Front-end Dev (in-training
+                🤪).
+              </h3>
+              <br />
+              <h5>currently at:</h5>
+              <p>
+                Resmark Systems — ➀ working as a customer success/onboarding
+                manager, ➁ assisting with QA, and ➂ assisting with product
+                management.
+              </p>
+
+              <p>
+                Environmental Health Trust — ➀ working as a research assistant,
+                ➁ lliterature and powerpoint presentation reviews, and ➂
+                nonprofit YouTube management.
+              </p>
+            </div>
           </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-3">
-            <div class="select-projects">
-              <h4>Select Projects</h4>
-              <ul class="main-select-projects">
+        </section>
+        <!-- skills (bar chart) -->
+        <section class="row">
+          <div class="skills p-2"><h2>skills</h2></div>
+          <div class="col-md-7 chart">
+            <div class="bar">
+              <div class="skill">support</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">management</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">research</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">zotero</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">SEO</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">youtube</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">HTML5</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">CSS3</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">JavaScript</div>
+              <div class="value"></div>
+            </div>
+            <div class="bar">
+              <div class="skill">React.js</div>
+              <div class="value"></div>
+            </div>
+          </div>
+          <div class="col-md-1 p-3"></div>
+          <!-- random facts -->
+          <div class="col-md-4">
+            <div class="random-facts p-2">
+              <h2>random facts</h2>
+              <ul class="ten-things">
+                <li>I drink a lot of espresso.</li>
+                <li>I'm an advanced green belt in Taekwondo.</li>
+                <li>I love to eat, hate to cook.</li>
+                <li>I'm a huge Jurassic Park fan, love them dinos!</li>
+                <li>I have a small collection of legos.</li>
+                <li>I have two elkhounds and one rescue parrot.</li>
+                <li>I'm from Idaho, but don't eat potatoes.</li>
+                <li>I "secretly" 🤍 anime & manga.</li>
                 <li>
-                  <a
-                    href="https://www.shecodes.io/workshops/shecodes-basics-b25d9815-ace9-4647-be8e-e8f861f89503/projects/1130066"
-                    title="Honey Lavendar Latte App by Candace Woodbury for SheCodes Project."
-                    >Honey Lavender Lattes</a
-                  >
+                  I like to
+                  <a href="#" title="Candace's doodles and drawings">doodle</a>.
                 </li>
-                <li>
-                  <a
-                    href="https://flourishing-licorice-d6081d.netlify.app/"
-                    title="Weather App by Candace Woodbury for SheCodes Project."
-                    >Monster Weather</a
-                  >
-                </li>
+                <li>Sneakerhead.</li>
               </ul>
             </div>
           </div>
-        </main>
-        <div class="row"></div>
-
+        </section>
         <!-- sidebar social and email -->
         <div orientation="left" class="side-social">
           <ul class="social-list">
@@ -128,9 +186,9 @@
             </li>
             <li>
               <a
-                id="copy-link"
-                data-clipboard-text="c.woodbury@protonmail.com"
                 href="#"
+                id="copy-link"
+                data-clipboard-text="candacisms@gmail.com"
                 ><i class="fa-regular fa-envelope"></i
               ></a>
             </li>
@@ -139,7 +197,7 @@
         </div>
         <div orientation="right" class="side-email">
           <div class="email-main">
-            <a href="mailto:c.woodbury@protonmail.com">c.woodbury@protonmail.com</a>
+            <a href="mailto:candacisms@gmail.com">candacisms@gmail.com</a>
           </div>
         </div>
 
@@ -151,7 +209,7 @@
             View
             <a
               class=""
-              href="https://github.com/candacemonster/2022Portfolio"
+              href="https://github.com/candacemonster/2023Portfolio.git"
               >source</a
             >.
           </div>
@@ -159,6 +217,7 @@
       </div>
     </div>
     <script src="/src/main.js"></script>
+    <script src="/src/skills.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
