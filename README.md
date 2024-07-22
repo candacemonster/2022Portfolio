@@ -1,1 +1,2 @@
-# Candace Woodbury's Personal Portfolio
+She Code's Project 
+Personal portfolio
